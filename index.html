@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaura Links</title>
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8NPL66469"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M8NPL66469');
+    </script>
+</head>
+<body>
+  <script>
+    // ?utm_source=X&utm_campaign=TruthSeeking
+    const links = {
+        // A Talk with Grok
+        'audio-books': 'https://www.purebhakti.com/resources/ebooks-magazines/audio-books',  
+        'ebooks': 'https://www.purebhakti.com/resources/ebooks-magazines',
+        // Blog
+        'ceos': 'https://jaygaura.com/2025/04/ai-makes-us-ceos.html'
+    };
+    const path = window.location.pathname.split('/').pop();
+    window.location = links[path] || 'https://jaygaura.com';
+  </script>
+</body>
+</html>
